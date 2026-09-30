@@ -1,0 +1,37 @@
+name: 팝업 자동 수집 (매주 월요일)
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # 매주 월요일 00:00 UTC = 한국시간 월요일 오전 9시
+  workflow_dispatch:        # Actions 탭에서 수동 실행도 가능
+
+concurrency:
+  group: collect-popups
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r collector/requirements.txt
+
+      # 상세 페이지 파싱 결과 캐시 (다음 주엔 바뀐 것만 다시 읽어서 훨씬 빨라져요)
+      - uses: actions/cache@v4
+        with:
+          path: collector/cache.json
+          key: popga-cache-${{ github.run_id }}
+          restore-keys: popga-cache-
+
+      - name: 팝업 수집 & 구글 시트 갱신
+        env:
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          PYTHONIOENCODING: utf-8
+        run: python collector/collect_popups.py

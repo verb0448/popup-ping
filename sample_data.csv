@@ -1,0 +1,11 @@
+장소명,카테고리,시작일,종료일,주소,위도,경도,참고_링크,이미지_URL
+[샘플] 네온 젤리 팝업,팝업스토어,2026-09-15,2026-10-12,서울 성동구 아차산로 17길 48,37.5445,127.0557,https://example.com/jelly,https://picsum.photos/seed/jelly/600/450
+[샘플] 오늘 마지막 포토부스,팝업스토어,2026-09-20,2026-09-30,서울 마포구 와우산로 21길 20,37.5563,126.9236,https://example.com/photo,https://picsum.photos/seed/photo/600/450
+[샘플] 빛의 정원 미디어아트,전시,2026-09-01,2026-11-15,서울 중구 을지로 281 DDP,37.5665,127.0092,https://example.com/light,https://picsum.photos/seed/light/600/450
+[샘플] 말차 라운지 한남,카페,2026-09-25,2026-10-05,서울 용산구 이태원로 55길 10,37.5342,127.0016,,https://picsum.photos/seed/matcha/600/450
+[샘플] 캐릭터 굿즈 스토어,팝업스토어,2026-10-10,2026-11-09,서울 영등포구 여의대로 108 더현대,37.5259,126.9285,https://example.com/char,https://picsum.photos/seed/char/600/450
+[샘플] 레트로 게임 체험관,체험,2026-09-10,2026-10-20,서울 송파구 올림픽로 300,37.5131,127.104,https://example.com/game,
+[샘플] 압구정 뷰티 팝업,팝업스토어,2026-09-18,2026-10-03,서울 강남구 압구정로 29길 11,37.5273,127.0287,https://example.com/beauty,https://picsum.photos/seed/beauty/600/450
+[샘플] 연남 감성 디저트,카페,2026.09.05,2026.10.30,서울 마포구 연희로 1길 5,37.5614,126.9246,https://example.com/dessert,https://picsum.photos/seed/dessert/600/450
+[샘플] 지난 사진전,전시,2026-08-01,2026-09-14,서울 종로구 북촌로 11길 7,37.5826,126.983,https://example.com/past,https://picsum.photos/seed/past/600/450
+[샘플] 코엑스 K-팝 전시,전시,2026-09-28,,서울 강남구 영동대로 513,37.5116,127.0593,https://example.com/kpop,https://picsum.photos/seed/kpop/600/450
